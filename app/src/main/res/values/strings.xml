@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Assam House</string>
+    <string name="assam_house_logo">Assam House Logo</string>
+    <string name="email_editText">Email</string>
+    <string name="password_editText">Password</string>
+    <string name="new_here_sign_up">New Here? <font fgcolor="#4CAF50"><u>Sign Up</u></font></string>
+    <string name="create_account">Create Account</string>
+    <string name="reenter_password">Re-enter Password</string>
+    <string name="register">Register</string>
+    <string name="title_activity_home">Cuisine Category</string>
+    <string name="setting_logout">Logout</string>
+    <string name="setting_about">About</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="new_password">New Password</string>
+    <string name="malaysia">Malaysia</string>
+    <string name="thailand">Thailand</string>
+    <string name="vietnam">Vietnam</string>
+    <string name="indonesia">Indonesia</string>
+    <string name="korea">Korea</string>
+    <string name="title_activity_cuisine_list">CuisineListActivity</string>
+    <string name="search">Search</string>
+    <string name="image_description">Image</string>
+    <string name="title_activity_cuisine_recipe">CuisineRecipeActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="cook_time">Cook Time: </string>
+    <string name="prepare_time">Prepare Time: </string>
+    <string name="servings">Servings: </string>
+    <string name="description">Description: </string>
+    <string name="category">Category: </string>
+    <string name="cuisine_image">Cuisine Image</string>
+</resources>

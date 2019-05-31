@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="yeongdejong.com.assamhouse.CuisineRecipeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:scaleType="fitStart"
+                android:id="@+id/cuisineImage" />
+
+            <TextView
+                android:text="@string/category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cuisineImage"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="15dp"
+                android:id="@+id/textCategory" />
+
+            <TextView
+                android:text="@string/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textCategory"
+                android:layout_alignRight="@+id/textCategory"
+                android:layout_alignEnd="@+id/textCategory"
+                android:layout_marginTop="12dp"
+                android:lineSpacingExtra="6dp"
+                android:id="@+id/textDescription" />
+
+            <TextView
+                android:text="@string/servings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textDescription"
+                android:layout_alignRight="@+id/textDescription"
+                android:layout_alignEnd="@+id/textDescription"
+                android:layout_marginTop="12dp"
+                android:id="@+id/textServings" />
+
+            <TextView
+                android:text="@string/prepare_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textServings"
+                android:layout_alignRight="@+id/textServings"
+                android:layout_alignEnd="@+id/textServings"
+                android:layout_marginTop="12dp"
+                android:id="@+id/textPrepareTime" />
+
+            <TextView
+                android:text="@string/cook_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textPrepareTime"
+                android:layout_alignRight="@+id/textPrepareTime"
+                android:layout_alignEnd="@+id/textPrepareTime"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="65dp"
+                android:id="@+id/textCookTime" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

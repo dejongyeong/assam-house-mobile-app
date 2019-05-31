@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="yeongdejong.com.assamhouse.HomeActivity"
+    android:gravity="center_vertical"
+    tools:showIn="@layout/activity_home">
+
+
+    <Button
+        android:text="@string/malaysia"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnMalaysia"
+        android:onClick="category"/>
+
+    <Button
+        android:text="@string/thailand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnMalaysia"
+        android:layout_alignLeft="@+id/btnMalaysia"
+        android:layout_alignStart="@+id/btnMalaysia"
+        android:layout_marginTop="6dp"
+        android:id="@+id/btnThailand"
+        android:layout_alignRight="@+id/btnMalaysia"
+        android:layout_alignEnd="@+id/btnMalaysia"
+        android:onClick="category"/>
+
+    <Button
+        android:text="@string/vietnam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnThailand"
+        android:layout_alignLeft="@+id/btnThailand"
+        android:layout_alignStart="@+id/btnThailand"
+        android:layout_marginTop="6dp"
+        android:id="@+id/btnVietnam"
+        android:layout_alignRight="@+id/btnThailand"
+        android:layout_alignEnd="@id/btnThailand"
+        android:onClick="category"/>
+
+    <Button
+        android:text="@string/indonesia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnVietnam"
+        android:layout_alignRight="@+id/btnVietnam"
+        android:layout_alignEnd="@+id/btnVietnam"
+        android:layout_marginTop="6dp"
+        android:layout_alignLeft="@id/btnVietnam"
+        android:layout_alignStart="@id/btnVietnam"
+        android:id="@+id/btnIndonesia"
+        android:onClick="category"/>
+
+    <Button
+        android:text="@string/korea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnIndonesia"
+        android:layout_alignLeft="@+id/btnIndonesia"
+        android:layout_alignStart="@+id/btnIndonesia"
+        android:layout_alignRight="@id/btnIndonesia"
+        android:layout_alignEnd="@id/btnIndonesia"
+        android:layout_marginTop="6dp"
+        android:id="@+id/btnKorea"
+        android:onClick="category"/>
+
+</RelativeLayout>

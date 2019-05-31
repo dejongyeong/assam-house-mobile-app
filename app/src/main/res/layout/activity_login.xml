@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".LoginActivity"
+    android:gravity="center_vertical" >
+
+
+    <ImageView
+        android:src="@drawable/logo"
+        android:layout_width="330dp"
+        android:layout_height="180dp"
+        android:id="@+id/logoImageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/assam_house_logo" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtEmail"
+        android:hint="@string/email_editText"
+        android:textColorHint="#deaaaaaa"
+        android:layout_below="@+id/logoImageView"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/ic_account"
+        android:inputType="textEmailAddress"
+        android:fontFamily="sans-serif"
+        android:layout_alignRight="@+id/logoImageView"
+        android:layout_alignEnd="@+id/logoImageView"
+        android:layout_alignLeft="@+id/logoImageView"
+        android:layout_alignStart="@+id/logoImageView" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtPassword"
+        android:layout_below="@+id/edtEmail"
+        android:hint="@string/password_editText"
+        android:textColorHint="#deaaaaaa"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_lock"
+        android:fontFamily="sans-serif"
+        android:layout_alignLeft="@+id/edtEmail"
+        android:layout_alignStart="@+id/edtEmail"
+        android:layout_alignRight="@+id/edtEmail"
+        android:layout_alignEnd="@+id/edtEmail" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/btnLogin"
+        android:layout_below="@+id/txtForgetPassword"
+        android:layout_alignRight="@+id/edtPassword"
+        android:layout_alignEnd="@+id/edtPassword"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorTextPrimary"
+        android:onClick="login"
+        android:layout_alignLeft="@+id/edtPassword"
+        android:layout_alignStart="@+id/edtPassword" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/new_here_sign_up"
+        android:id="@+id/txtSignUp"
+        android:layout_below="@+id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textSize="14dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorTextSecondary"
+        android:onClick="signup"/>
+
+    <TextView
+        android:text="@string/forget_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtForgetPassword"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="6dp"
+        android:textSize="13dp"
+        android:layout_below="@+id/edtPassword"
+        android:layout_toRightOf="@+id/txtSignUp"
+        android:layout_toEndOf="@+id/txtSignUp"
+        android:onClick="forget"/>
+
+</RelativeLayout>

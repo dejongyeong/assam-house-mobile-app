@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    tools:context=".LoginActivity" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:gravity="center_vertical"
+        android:layout_weight="0.6" >
+
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:id="@+id/logoImageView"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/assam_house_logo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:gravity="center_vertical"
+        android:layout_weight="1" >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtEmail"
+            android:hint="@string/email_editText"
+            android:drawableLeft="@drawable/ic_account"
+            android:textColorHint="#deaaaaaa"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:inputType="textEmailAddress"
+            android:fontFamily="sans-serif"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtPassword"
+            android:layout_below="@+id/edtEmail"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:drawableLeft="@drawable/ic_lock"
+            android:hint="@string/password_editText"
+            android:textColorHint="#deaaaaaa"
+            android:inputType="textPassword"
+            android:fontFamily="sans-serif" />
+
+        <TextView
+            android:text="@string/forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtForgetPassword"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="6dp"
+            android:textSize="13dp"
+            android:layout_below="@+id/edtPassword"
+            android:layout_toRightOf="@+id/txtSignUp"
+            android:layout_toEndOf="@+id/txtSignUp"
+            android:layout_gravity="right"
+            android:onClick="forget"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:id="@+id/btnLogin"
+            android:layout_below="@+id/edtPassword"
+            android:layout_alignRight="@+id/edtPassword"
+            android:layout_alignEnd="@+id/edtPassword"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorTextPrimary"
+            android:onClick="login" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/new_here_sign_up"
+            android:id="@+id/txtSignUp"
+            android:layout_below="@+id/btnLogin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorTextSecondary"
+            android:layout_gravity="center_horizontal"
+            android:onClick="signup"/>
+
+    </LinearLayout>
+
+</LinearLayout>
